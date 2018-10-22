@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container app">
+        <header>
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3">
+                    <div class="toggle">
+                        <div class="toggle__wrapper">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <p class="options">
+                        <span>&#9679;</span>
+                        <span>&#9679;</span>
+                        <span>&#9679;</span>
+                    </p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-3  text-center">
+                    <p class="app-name">MyBookApp</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+                    <ul class="contact">
+                        <li class="contact__help contact__help-center">Help Center</li>
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-circle"></i>
+                        <li class="contact__help contact__support">Our Support</li>
+                        <i class="fas fa-headset"></i>
+                        <li class="contact__account">
+                            <div class="contact__account--profile-pic"></div>John Doe<i class="fas fa-chevron-circle-down"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="sidebar">
+                        <div class="sidebar__section add-book">
+                            <div class="btn-add-wrapper">
+                                <button><span class="btn-add-wrapper__plus">&plus;</span><span class="btn-add-wrapper__text">ADD A BOOK</span></button>
+                            </div>
+                        </div>
+                        <nav class="sidebar__section">
+                            <ul class="sidebar__section__navigation">
+                                <li>
+                                    <a><i class="fas fa-book"></i> Now Reading</a>
+                                </li>
+                                <li class="sidebar__section__navigation__li--active">
+                                    <a><i class="fas fa-globe-americas"></i> Browse</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-shopping-cart"></i> Buy Books</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-star"></i> Favourite Books</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-th-list"></i> Wishlist</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-history"></i> History</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="sidebar__section">
+                            <ul class="sidebar__section__books-filter">
+                                <li>
+                                    <a><i class="fas fa-circle"></i> Must Read Titles</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-circle"></i> Best Of List</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-circle"></i> Classic Novels</a>
+                                </li>
+                                <li>
+                                    <a><i class="fas fa-circle"></i> Non Fiction</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__section">
+                            <ul class="sidebar__section__history">
+                                <li>
+                                    <i class="fas fa-history"></i>
+                                    <p>You added <span class="sidebar__section__history--highlight">Fight Club</span> by <span class="sidebar__section__history--highlight">Chuck Palahniuk</span> to your <span class="sidebar__section__history--highlight">Must Read Titles</span>.<br>
+                                        <span class="sidebar__section__history--time">24 minutes ago</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-history"></i>
+                                    <p>You added <span class="sidebar__section__history--highlight">The Trial</span> by <span class="sidebar__section__history--highlight">Franz Kafka</span> to your <span class="sidebar__section__history--highlight">Must Read Titles</span>.<br>
+                                        <span class="sidebar__section__history--time">48 minutes ago</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    <div class="content">
+                        <div class="content__content-nav-wrapper">
+                            <h1>Browse Available Books</h1>
+                            <div class="content__content-nav-wrapper__content-nav">
+                                <ul>
+                                    <li>All Books</li>
+                                    <li>Most Recent</li>
+                                    <li>Most Popular</li>
+                                    <li>Free Books</li>
+                                </ul>
+                                <input type="search" placeholder="Enter Keywords">
+                            </div>
+                        </div>
+                        <div class="content__content-nav-wrapper__books">
+                            <ul>
+                                <li>
+                                    <img src="./src/book-covers/1.jpg">
+                                    <p class="book-name">Jewels of Nizam</p>
+                                    <p class="author">by Geeta Devi</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b1-5" name="rating-b1" value="5" checked="checked" /><label
+                                                class="full" for="b1-5" title="Awesome!"></label>
+                                            <input type="radio" id="b1-4.5" name="rating-b1" value="4.5" /><label class="half"
+                                                for="b1-4.5" title="Good!"></label>
+                                            <input type="radio" id="b1-4" name="rating-b1" value="4" /><label class="full"
+                                                for="b1-4" title="Pretty good"></label>
+                                            <input type="radio" id="b1-3.5" name="rating-b1" value="3.5" /><label class="half"
+                                                for="b1-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b1-3" name="rating-b1" value="3" /><label class="full"
+                                                for="b1-3" title="Acceptable"></label>
+                                            <input type="radio" id="b1-2.5" name="rating-b1" value="2.5" /><label class="half"
+                                                for="b1-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b1-2" name="rating-b1" value="2" /><label class="full"
+                                                for="b1-2" title="Bad"></label>
+                                            <input type="radio" id="b1-1.5" name="rating-b1" value="1.5" /><label class="half"
+                                                for="b1-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b1-1" name="rating-b1" value="1" /><label class="full"
+                                                for="b1-1" title="It sucks!"></label>
+                                            <input type="radio" id="b1-0.5" name="rating-b1" value="0.5" /><label class="half"
+                                                for="b1-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/2.jpg">
+                                    <p class="book-name">Cakes and Bakes</p>
+                                    <p class="author">by Sanjeev Kapoor</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b2-5" name="rating-b2" value="5" checked="checked" />
+                                            <label class="full" for="b2-5" title="Awesome!"></label>
+                                            <input type="radio" id="b2-4.5" name="rating-b2" value="4.5" /><label class="half"
+                                                for="b2-4.5" title="Good!"></label>
+                                            <input type="radio" id="b2-4" name="rating-b2" value="4" /><label class="full"
+                                                for="b2-4" title="Pretty good"></label>
+                                            <input type="radio" id="b2-3.5" name="rating-b2" value="3.5" /><label class="half"
+                                                for="b2-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b2-3" name="rating-b2" value="3" /><label class="full"
+                                                for="b2-3" title="Acceptable"></label>
+                                            <input type="radio" id="b2-2.5" name="rating-b2" value="2.5" /><label class="half"
+                                                for="b2-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b2-2" name="rating-b2" value="2" /><label class="full"
+                                                for="b2-2" title="Bad"></label>
+                                            <input type="radio" id="b2-1.5" name="rating-b2" value="1.5" /><label class="half"
+                                                for="b2-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b2-1" name="rating-b2" value="1" /><label class="full"
+                                                for="b2-1" title="It sucks!"></label>
+                                            <input type="radio" id="b2-0.5" name="rating-b2" value="0.5" /><label class="half"
+                                                for="b2-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/3.jpg">
+                                    <p class="book-name">Jamie’s Kitchen</p>
+                                    <p class="author">by Jamie Oliver</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b3-5" name="rating-b3" value="5" /><label class="full"
+                                                for="b3-5" title="Awesome!"></label>
+                                            <input type="radio" id="b3-4.5" name="rating-b3" value="4.5" checked="checked" /><label
+                                                class="half" for="b3-4.5" title="Good!"></label>
+                                            <input type="radio" id="b3-4" name="rating-b3" value="4" /><label class="full"
+                                                for="b3-4" title="Pretty good"></label>
+                                            <input type="radio" id="b3-3.5" name="rating-b3" value="3.5" /><label class="half"
+                                                for="b3-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b3-3" name="rating-b3" value="3" /><label class="full"
+                                                for="b3-3" title="Acceptable"></label>
+                                            <input type="radio" id="b3-2.5" name="rating-b3" value="2.5" /><label class="half"
+                                                for="b3-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b3-2" name="rating-b3" value="2" /><label class="full"
+                                                for="b3-2" title="Bad"></label>
+                                            <input type="radio" id="b3-1.5" name="rating-b3" value="1.5" /><label class="half"
+                                                for="b3-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b3-1" name="rating-b3" value="1" /><label class="full"
+                                                for="b3-1" title="It sucks!"></label>
+                                            <input type="radio" id="b3-0.5" name="rating-b3" value="0.5" /><label class="half"
+                                                for="b3-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/4.jpg">
+                                    <p class="book-name">Inexpensive Family Meals</p>
+                                    <p class="author">by Simon Holst</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b4-5" name="rating-b4" value="5" /><label class="full"
+                                                for="b4-5" title="Awesome!"></label>
+                                            <input type="radio" id="b4-4.5" name="rating-b4" value="4.5" /><label class="half"
+                                                for="b4-4.5" title="Good!"></label>
+                                            <input type="radio" id="b4-4" name="rating-b4" value="4" checked="checked" /><label
+                                                class="full" for="b4-4" title="Pretty good"></label>
+                                            <input type="radio" id="b4-3.5" name="rating-b4" value="3.5" /><label class="half"
+                                                for="b4-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b4-3" name="rating-b4" value="3" /><label class="full"
+                                                for="b4-3" title="Acceptable"></label>
+                                            <input type="radio" id="b4-2.5" name="rating-b4" value="2.5" /><label class="half"
+                                                for="b4-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b4-2" name="rating-b4" value="2" /><label class="full"
+                                                for="b4-2" title="Bad"></label>
+                                            <input type="radio" id="b4-1.5" name="rating-b4" value="1.5" /><label class="half"
+                                                for="b4-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b4-1" name="rating-b4" value="1" /><label class="full"
+                                                for="b4-1" title="It sucks!"></label>
+                                            <input type="radio" id="b4-0.5" name="rating-b4" value="0.5" /><label class="half"
+                                                for="b4-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/5.jpg">
+                                    <p class="book-name">Paleo Slow Cooking</p>
+                                    <p class="author">Paleo Slow Cooking</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b5-5" name="rating-b5" value="5" /><label class="full"
+                                                for="b5-5" title="Awesome!"></label>
+                                            <input type="radio" id="b5-4.5" name="rating-b5" value="4.5" checked="checked" /><label
+                                                class="half" for="b5-4.5" title="Good!"></label>
+                                            <input type="radio" id="b5-4" name="rating-b5" value="4" /><label class="full"
+                                                for="b5-4" title="Pretty good"></label>
+                                            <input type="radio" id="b5-3.5" name="rating-b5" value="3.5" /><label class="half"
+                                                for="b5-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b5-3" name="rating-b5" value="3" /><label class="full"
+                                                for="b5-3" title="Acceptable"></label>
+                                            <input type="radio" id="b5-2.5" name="rating-b5" value="2.5" /><label class="half"
+                                                for="b5-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b5-2" name="rating-b5" value="2" /><label class="full"
+                                                for="b5-2" title="Bad"></label>
+                                            <input type="radio" id="b5-1.5" name="rating-b5" value="1.5" /><label class="half"
+                                                for="b5-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b5-1" name="rating-b5" value="1" /><label class="full"
+                                                for="b5-1" title="It sucks!"></label>
+                                            <input type="radio" id="b5-0.5" name="rating-b5" value="0.5" /><label class="half"
+                                                for="b5-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/6.jpg">
+                                    <p class="book-name">Cook Like an Italian</p>
+                                    <p class="author">by Tobie Puttock</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b6-5" name="rating-b6" value="5" /><label class="full"
+                                                for="b6-5" title="Awesome!"></label>
+                                            <input type="radio" id="b6-4.5" name="rating-b6" value="4.5" /><label class="half"
+                                                for="b6-4.5" title="Good!"></label>
+                                            <input type="radio" id="b6-4" name="rating-b6" value="4" checked="checked" /><label
+                                                class="full" for="b6-4" title="Pretty good"></label>
+                                            <input type="radio" id="b6-3.5" name="rating-b6" value="3.5" /><label class="half"
+                                                for="b6-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b6-3" name="rating-b6" value="3" /><label class="full"
+                                                for="b6-3" title="Acceptable"></label>
+                                            <input type="radio" id="b6-2.5" name="rating-b6" value="2.5" /><label class="half"
+                                                for="b6-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b6-2" name="rating-b6" value="2" /><label class="full"
+                                                for="b6-2" title="Bad"></label>
+                                            <input type="radio" id="b6-1.5" name="rating-b6" value="1.5" /><label class="half"
+                                                for="b6-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b6-1" name="rating-b6" value="1" /><label class="full"
+                                                for="b6-1" title="It sucks!"></label>
+                                            <input type="radio" id="b6-0.5" name="rating-b6" value="0.5" /><label class="half"
+                                                for="b6-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/7.jpg">
+                                    <p class="book-name">Suneeta Vaswani</p>
+                                    <p class="author">by Geeta Devi</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b7-5" name="rating-b7" value="5" checked="checked" /><label
+                                                class="full" for="b7-5" title="Awesome!"></label>
+                                            <input type="radio" id="b7-4.5" name="rating-b7" value="4.5" /><label class="half"
+                                                for="b7-4.5" title="Good!"></label>
+                                            <input type="radio" id="b7-4" name="rating-b7" value="4" /><label class="full"
+                                                for="b7-4" title="Pretty good"></label>
+                                            <input type="radio" id="b7-3.5" name="rating-b7" value="3.5" /><label class="half"
+                                                for="b7-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b7-3" name="rating-b7" value="3" /><label class="full"
+                                                for="b7-3" title="Acceptable"></label>
+                                            <input type="radio" id="b7-2.5" name="rating-b7" value="2.5" /><label class="half"
+                                                for="b7-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b7-2" name="rating-b7" value="2" /><label class="full"
+                                                for="b7-2" title="Bad"></label>
+                                            <input type="radio" id="b7-1.5" name="rating-b7" value="1.5" /><label class="half"
+                                                for="b7-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b7-1" name="rating-b7" value="1" /><label class="full"
+                                                for="b7-1" title="It sucks!"></label>
+                                            <input type="radio" id="b7-0.5" name="rating-b7" value="0.5" /><label class="half"
+                                                for="b7-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/8.png">
+                                    <p class="book-name">Jamie Does</p>
+                                    <p class="author">by Jamie Oliver</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b8-5" name="rating-b8" value="5" /><label class="full"
+                                                for="b8-5" title="Awesome!"></label>
+                                            <input type="radio" id="b8-4.5" name="rating-b8" value="4.5" checked="checked" /><label
+                                                class="half" for="b8-4.5" title="Good!"></label>
+                                            <input type="radio" id="b8-4" name="rating-b8" value="4" /><label class="full"
+                                                for="b8-4" title="Pretty good"></label>
+                                            <input type="radio" id="b8-3.5" name="rating-b8" value="3.5" /><label class="half"
+                                                for="b8-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b8-3" name="rating-b8" value="3" /><label class="full"
+                                                for="b8-3" title="Acceptable"></label>
+                                            <input type="radio" id="b8-2.5" name="rating-b8" value="2.5" /><label class="half"
+                                                for="b8-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b8-2" name="rating-b8" value="2" /><label class="full"
+                                                for="b8-2" title="Bad"></label>
+                                            <input type="radio" id="b8-1.5" name="rating-b8" value="1.5" /><label class="half"
+                                                for="b8-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b8-1" name="rating-b8" value="1" /><label class="full"
+                                                for="b8-1" title="It sucks!"></label>
+                                            <input type="radio" id="b8-0.5" name="rating-b8" value="0.5" /><label class="half"
+                                                for="b8-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/9.png">
+                                    <p class="book-name">Jamie’s italy</p>
+                                    <p class="author">by Jamie Oliver</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b9-5" name="rating-b9" value="5" checked="checked" /><label
+                                                class="full" for="b9-5" title="Awesome!"></label>
+                                            <input type="radio" id="b9-4.5" name="rating-b9" value="4.5" /><label class="half"
+                                                for="b9-4.5" title="Good!"></label>
+                                            <input type="radio" id="b9-4" name="rating-b9" value="4" /><label class="full"
+                                                for="b9-4" title="Pretty good"></label>
+                                            <input type="radio" id="b9-3.5" name="rating-b9" value="3.5" /><label class="half"
+                                                for="b9-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b9-3" name="rating-b9" value="3" /><label class="full"
+                                                for="b9-3" title="Acceptable"></label>
+                                            <input type="radio" id="b9-2.5" name="rating-b9" value="2.5" /><label class="half"
+                                                for="b9-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b9-2" name="rating-b9" value="2" /><label class="full"
+                                                for="b9-2" title="Bad"></label>
+                                            <input type="radio" id="b9-1.5" name="rating-b9" value="1.5" /><label class="half"
+                                                for="b9-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b9-1" name="rating-b9" value="1" /><label class="full"
+                                                for="b9-1" title="It sucks!"></label>
+                                            <input type="radio" id="b9-0.5" name="rating-b9" value="0.5" /><label class="half"
+                                                for="b9-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./src/book-covers/10.jpg">
+                                    <p class="book-name">Vegetables Cookbook</p>
+                                    <p class="author">by Matthew Biggs</p>
+                                    <div class="rating-wrapper">
+                                        <fieldset class="rating-wrapper__rating">
+                                            <input type="radio" id="b10-5" name="rating-b10" value="5" /><label class="full"
+                                                for="b10-5" title="Awesome!"></label>
+                                            <input type="radio" id="b10-4.5" name="rating-b10" value="4.5" /><label
+                                                class="half" for="b10-4.5" title="Good!"></label>
+                                            <input type="radio" id="b10-4" name="rating-b10" value="4" /><label class="full"
+                                                for="b10-4" title="Pretty good"></label>
+                                            <input type="radio" id="b10-3.5" name="rating-b10" value="3.5" checked="checked" /><label
+                                                class="half" for="b10-3.5" title="Not bad"></label>
+                                            <input type="radio" id="b10-3" name="rating-b10" value="3" /><label class="full"
+                                                for="b10-3" title="Acceptable"></label>
+                                            <input type="radio" id="b10-2.5" name="rating-b10" value="2.5" /><label
+                                                class="half" for="b10-2.5" title="Kinda bad"></label>
+                                            <input type="radio" id="b10-2" name="rating-b10" value="2" /><label class="full"
+                                                for="b10-2" title="Bad"></label>
+                                            <input type="radio" id="b10-1.5" name="rating-b10" value="1.5" /><label
+                                                class="half" for="b10-1.5" title="Worth nothing!"></label>
+                                            <input type="radio" id="b10-1" name="rating-b10" value="1" /><label class="full"
+                                                for="b10-1" title="It sucks!"></label>
+                                            <input type="radio" id="b10-0.5" name="rating-b10" value="0.5" /><label
+                                                class="half" for="b10-0.5" title="It sucks so bad!"></label>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"></div>
+                <div class="col-lg-4 col-md-4col-sm-4 col-xs-4 info">
+                    <div class="footer-icons-wrapper">
+                        <i class="fas fa-question-circle"></i>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
